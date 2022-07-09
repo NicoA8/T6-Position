@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <title>Modal</title>
+    <style>
+      body {
+        background-color: #b7b7b7;
+        font-family: "Inter", sans-serif;
+        margin: 0rem;
+      }
+      .box {
+        color: white;
+        background-image: radial-gradient(#42454c, #25282e);
+        max-width: 54rem;
+        width: 74vw;
+        height: 30rem;
+        border-radius: 0.5rem;
+        padding: 1.3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        position: fixed;
+        inset-block-start: 50%;
+        inset-inline-start: 50%;
+        transform: translate(-50%, -50%);
+      }
+      a {
+        text-decoration-line: none;
+      }
+      h1 {
+        font-weight: 900;
+        margin: 0rem;
+      }
+      .content {
+        height: 20.2rem;
+        margin: 0rem;
+        padding: 0.5rem 0.2rem;
+        font-size: 0.95rem;
+        border-block: 0.06rem solid white;
+        overflow: auto;
+        scrollbar-width: thin;
+        /* scroll thumb and track */
+        scrollbar-color: white transparent;
+      }
+      .content::-webkit-scrollbar {
+        width: 0.3rem;
+      }
+
+      .content::-webkit-scrollbar-track {
+        background: transparent;
+      }
+
+      .content::-webkit-scrollbar-thumb {
+        background-color: white;
+        border-radius: 2rem;
+      }
+      .content p {
+        margin-block-end: 1rem;
+        margin-block-start: 0rem;
+        line-height: 1.25rem;
+      }
+      .btn-ai {
+        padding: 0.5rem 1rem;
+        background: white;
+        color: black;
+        border-radius: 0.5rem;
+        align-self: stretch;
+        text-align: center;
+      }
+      .btn-x {
+        background: #44444b;
+        padding: 0.25rem;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 3rem;
+        font-weight: bold;
+        color: white;
+        font-size: 1.65rem;
+        text-align: center;
+        font-family: "Varela Round", sans-serif;
+        box-shadow: 0rem 0.18rem 2rem 0rem black;
+        position: absolute;
+        inset-inline-end: 0;
+        inset-block-start: 0;
+        transform: translate(50%, -50%);
+      }
+      @media (min-width: 425px) {
+        .btn-ai {
+          align-self: flex-end;
+          text-align: center;
+        }
+      }
+      @media (min-width: 500px) {
+        h1 {
+          font-size: 2.2rem;
+        }
+      }
+      @media (min-width: 530px) {
+        h1 {
+          font-size: 2.4rem;
+        }
+      }
+      @media (min-width: 577px) {
+        h1 {
+          font-size: 2rem;
+        }
+        .btn-ai {
+          background: #3d4450;
+          color: white;
+          align-self: flex-end;
+          text-align: center;
+          padding: 1rem 2rem;
+        }
+      }
+      @media (min-width: 720px) {
+        h1 {
+          font-size: 3rem;
+        }
+        .btn-ai {
+          background: #3d4450;
+          color: white;
+          align-self: flex-end;
+          text-align: center;
+          padding: 1rem 2rem;
+        }
+      }
+      @media (min-width: 1000px) {
+        h1 {
+          font-size: 3.5rem;
+        }
+        .content {
+          font-size: 0.89rem;
+        }
+        .content p {
+          line-height: 1rem;
+        }
+      }
+      @media (min-width: 1150px) {
+        h1 {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1>Acesta este un modal!</h1>
+      <a href="index.html" class="btn-x">x</a>
+      <main class="content small">
+        <p>
+          Landjaeger tongue kielbasa turkey alcatra. Ground round drumstick
+          doner shankle rump pork chop pork salami prosciutto. Leberkas swine
+          chislic ribeye corned beef frankfurter tri-tip jowl meatloaf
+          tenderloin tongue bresaola short ribs. Bresaola sausage tongue pork,
+          pork belly hamburger spare ribs rump sirloin buffalo picanha venison.
+          Shankle bresaola ground round leberkas short ribs sausage andouille
+          beef pig pastrami boudin rump salami.
+        </p>
+        <p>
+          Spare ribs minim flank, voluptate in sed sunt ipsum leberkas chuck.
+          Sausage nisi esse, jowl incididunt capicola sirloin. Tri-tip ullamco
+          officia, lorem sausage sed buffalo culpa in incididunt ground round
+          duis. Velit est tri-tip sed, irure chislic landjaeger occaecat
+          consectetur drumstick excepteur venison short loin incididunt doner.
+          Turducken velit voluptate hamburger turkey, frankfurter minim
+          consectetur tenderloin occaecat spare ribs.
+        </p>
+        <p>
+          Tongue meatloaf sint laborum pork shoulder adipisicing doner voluptate
+          aute est officia t-bone mollit. Veniam flank fugiat deserunt,
+          landjaeger sunt cupim. Velit duis salami, pork pork loin short loin
+          aute burgdoggen fatback. Dolore short ribs eiusmod bacon leberkas
+          meatball short loin aliqua landjaeger sed pork chop ea. Nostrud
+          buffalo cow, nulla lorem ipsum corned beef meatloaf doner t-bone.
+        </p>
+        <p>
+          Occaecat dolore bresaola qui. Enim burgdoggen est meatball pork chop
+          buffalo, esse et prosciutto jowl. Consectetur commodo kevin jowl,
+          filet mignon velit biltong sausage in ground round doner enim salami.
+          Brisket chislic labore in leberkas. Incididunt ut doner, enim
+          consectetur fugiat in burgdoggen bresaola laboris proident.
+        </p>
+      </main>
+      <a href="index.html" class="btn-ai">Am înțeles</a>
+    </div>
+  </body>
+</html>
